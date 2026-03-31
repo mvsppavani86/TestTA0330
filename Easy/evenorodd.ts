@@ -5,10 +5,12 @@ Write a function isEvenOrOdd(n: number): string that returns "Even" or "Odd".
 Example:  isEvenOrOdd(4)  →  "Even"   |   isEvenOrOdd(7)  →  "Odd" */
 
 console.log("**********Section B: Check Even or Odd**********");
-
+//type checking
 function isEvenOrOdd(n: number): string
  {
+	
 	return n % 2 === 0 ? "Even" : "Odd";
+
 }
  
 // Test cases

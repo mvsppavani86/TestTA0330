@@ -6,7 +6,7 @@ Example:  sumAll(1, 2, 3, 4)  →  10   |   sumAll(5, 10)  →  15
 */
 
 function sumAll(...nums: number[]): number /* ... rest parameter to accept any number of arguments of same type 
-umber in this case)*/
+number in this case)*/
  {
     if (nums.length === 0)
          throw new Error("At least one number must be provided");

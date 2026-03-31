@@ -4,10 +4,12 @@ Write a function isPalindrome(str: string): boolean that returns true if the str
 
 Example:  isPalindrome("madam")  →  true   |   isPalindrome("hello")  →  false */
 
-function strPalindrome(str:string):string
+function strPalindrome1(str:string):boolean
 {
    let reverseStr=""
-   str=str.replace(/\s/g,'') 
+   str=str.toLowerCase();
+
+   // str=str.replace(/\s/g,'') 
    /*/\s/ → matches any whitespace character (spaces, tabs, newlines, etc.)removing spaces 
    from the string, g is global across any possible matches in the string.*/
    
@@ -16,13 +18,13 @@ function strPalindrome(str:string):string
     reverseStr+=str[i]
    }
 
-if(str.toLowerCase()==reverseStr.toLowerCase())
-    return "palindrome"
+if(str==reverseStr)
+    return true
 else
-    return "Non-Palindrome"
+    return false
 }
-console.log(strPalindrome("aba"))
-console.log(strPalindrome("pavani"))
-console.log(strPalindrome("madam"))
-console.log(strPalindrome("aba aba"))
+console.log(strPalindrome1("aba"))
+console.log(strPalindrome1("pavani"))
+console.log(strPalindrome1("madam"))
+console.log(strPalindrome1("aba aba"))
 
