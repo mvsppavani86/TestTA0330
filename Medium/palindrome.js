@@ -5,7 +5,7 @@ Write a function isPalindrome(str: string): boolean that returns true if the str
 Example:  isPalindrome("madam")  →  true   |   isPalindrome("hello")  →  false */
 function strPalindrome(str) {
     var reverseStr = "";
-    str = str.replace(/\s/g, ''); //removing spaces from the string
+    str = str.replace(/\s/g, ''); //removing all spaces from the string
     for (var i = str.length - 1; i >= 0; i--) {
         reverseStr += str[i];
     }
